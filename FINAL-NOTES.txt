@@ -1,0 +1,20 @@
+Independent static-site cleanup completed.
+
+GitHub Pages project-path compatibility patch completed.
+
+- All remaining root-relative internal routes in saved page data were converted to local HTML filenames.
+- The fallback home redirect now uses index.html instead of the domain root.
+- A .nojekyll marker was added so GitHub Pages publishes stylesheet files whose names begin with an underscore.
+- Local stylesheets, images, favicon, and page navigation resolve from both a project subpath and a domain root.
+
+- Internal page navigation remains local.
+- Hostinger/Zyro font URLs removed.
+- Higuen display font replaced with Bodoni Moda via Google Fonts.
+- Lora, Montserrat, and Nanum Gothic now load from Google Fonts rather than Zyro.
+- Zyro social-preview image references replaced with the existing site logo image on consider-the-lilies.ca.
+- Unused browser-downloaded index.js.download files removed.
+- Canonical/SEO URLs intentionally remain on https://www.consider-the-lilies.ca/.
+- External service links (Square, Instagram, Facebook, Google Docs, Bandcamp, email) were left intact.
+- The contact page/functionality was not altered in this pass.
+
+Before cancelling Hostinger: deploy this copy, connect the custom domain, and test all pages on desktop and mobile.
